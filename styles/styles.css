@@ -101,7 +101,7 @@ header {
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #a4ac86;
+    background-color: #93ABB2;
   }
 
   .menu-list li a {
@@ -115,7 +115,7 @@ header {
   .menu-list li a.active {
     color: #333D29;
     width: 100%;
-    background-color: #318873;
+    background-color: #5A7683;
   }
 
   .menu-list.active {
@@ -168,15 +168,28 @@ body {
 }
 
 body h1 {
-  color: #c2c5aa;
+  color: #333D29;
 }
 body h2 {
-  color: #c2c5aa;
+  color: #333D29;
 }
 
 body h3 {
-  color: #c2c5aa;
+  color: #333D29;
 }
+
+body h4 {
+  color: #333D29;
+}
+
+body h5 {
+  color: #fff;
+}
+
+body h6 {
+  color: #fff;
+}
+
 
 body p {
   color: #fff;
@@ -275,11 +288,12 @@ body li a {
 
 
 /*Definiciones de footer, colores, tamaños y tipo de letra */
-.footer {
+footer {
+  /*display: flex;*/
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   background-color: #1C769C;
   font-size: large;
   color: #333D29;
@@ -289,12 +303,12 @@ body li a {
   position: fixed;
 }
 
-.footer p {
+footer p {
   color: #333D29;
 }
 
 @media (max-width: 600px) {
-  .footer p {
+  footer p {
     font-size: small;
   }
 }
