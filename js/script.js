@@ -52,7 +52,7 @@ const products = [
     id: "2",
     name: "Bombilla Bajo Consumo",
     price: 500,
-    imageUrl: "assets/storeImages/BombillaBajoConsumo.jpg"
+    imageUrl: "assets/storeImages/BombillaBajoConsumo.jpg"},
   {
     id: "3",
     name: "Kit Limpieza Sustentable",
