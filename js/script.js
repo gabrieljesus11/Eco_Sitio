@@ -46,31 +46,31 @@ const products = [
     id: "1",
     name: "Bolsa Reciclada",
     price: 100,
-    imageUrl: "../assets/storeImages/BolsaReciclada.jpg",
+    imageUrl: "https://github.com/gabrieljesus11/Eco_Sitio/blob/7f926af1157910c51d599066f0701f210a4a896a/assets/storeImages/BolsaReciclada.jpg",
   },
   {
     id: "2",
     name: "Bombilla Bajo Consumo",
     price: 500,
-    imageUrl: "../assets/storeImages/BombillaBajoConsumo.jpg",
+    imageUrl: "https://github.com/gabrieljesus11/Eco_Sitio/blob/7f926af1157910c51d599066f0701f210a4a896a/assets/storeImages/BombillaBajoConsumo.jpg",
   },
   {
     id: "3",
     name: "Kit Limpieza Sustentable",
     price: 1500,
-    imageUrl: "../assets/storeImages/kitLimpieza.jpeg",
+    imageUrl: "https://github.com/gabrieljesus11/Eco_Sitio/blob/7f926af1157910c51d599066f0701f210a4a896a/assets/storeImages/kitLimpieza.jpeg",
   },
   {
     id: "4",
     name: "Kit Ledesma Sustentable",
     price: 2000,
-    imageUrl: "../assets/storeImages/Ledesma-NAT.jpg",
+    imageUrl: "https://github.com/gabrieljesus11/Eco_Sitio/blob/7f926af1157910c51d599066f0701f210a4a896a/assets/storeImages/Ledesma-NAT.jpg",
   },
   {
     id: "5",
     name: "Tenedores de bamboo",
     price: 100,
-    imageUrl: "../assets/storeImages/tenedores.jpg",
+    imageUrl: "https://github.com/gabrieljesus11/Eco_Sitio/blob/7f926af1157910c51d599066f0701f210a4a896a/assets/storeImages/tenedores.jpg",
   },
 ];
 
