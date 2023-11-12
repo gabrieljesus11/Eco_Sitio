@@ -1,87 +1,109 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DYDW</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Header</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="images/logofondoAzul.png" alt="Incluir Logo">
+      <div class="logo-container">
+        <img src="images/logofondoAzul.png" alt="Incluir Logo" />
+      </div>
+      <nav class="menu">
+        <div class="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <nav class="menu">
-            <div class="menu-toggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul class="menu-list">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="catalogo.html">CATALOGO DE PRODUCTOS</a></li>
-                <li><a href="intercambio.html">PUNTOS DE INTERCAMBIO</a></li>
-                <li><a href="sostenibilidad.html">SOSTENIBILIDAD</a></li>
-                <li><a class="active" href="#">TIENDA</a></li>
-                <li><a href="contactanos.html">CONTACTANOS</a></li>
-                <li><a href="preguntas.html">PREGUNTAS FRECUENTAS</a></li>
-            </ul>
-        </nav>
+        <ul class="menu-list">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="catalogo.html">CATALOGO DE PRODUCTOS</a></li>
+          <li><a href="intercambio.html">PUNTOS DE INTERCAMBIO</a></li>
+          <li><a href="sostenibilidad.html">SOSTENIBILIDAD</a></li>
+          <li><a class="active" href="#">TIENDA</a></li>
+          <li><a href="contactanos.html">CONTACTANOS</a></li>
+          <li><a href="preguntas.html">PREGUNTAS FRECUENTAS</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="container-fluid" >
-        <div class="container-fluid" style="padding:10px 10px;">
-            <div class="container-fluid" style="padding:10px 10px;">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>En Construcción</h1>
-                    </div>
-                    <div class="col-12">
-                        <p>Aquí se exhibirán productos sostenibles disponibles para su compra. Los usuarios pueden explorar productos reciclados y sostenibles, agregar artículos a su carrito de compras y realizar compras responsables que apoyen la misión de la plataforma.</p>
-                    </div>
+    <div class="container-fluid">
+      <div class="container-fluid" style="padding: 10px 10px">
+        <div class="container-fluid" style="padding: 10px 10px">
+          <div class="row">
+            <div class="col-12">
+              <h1>Tienda</h1>
+              <div class="col-12">
+                <!-- Cart Icon and List Container -->
+                <div class="cart-container">
+                  <div class="cart-icon" onclick="toggleCartList()">
+                    <img src="./assets/icons/shopping_cart.svg" alt="Cart" />
+                    <span id="cart-count" class="cart-count">0</span>
+                  </div>
+                  <div id="cart-dropdown" class="cart-dropdown">
+                    <ul id="cart-item-list">
+                      <!-- Cart items will be dynamically inserted here -->
+                    </ul>
+                    <!-- Checkout Button -->
+                    <button id="checkout-button" onclick="checkout()">
+                      Comprar
+                    </button>
+                  </div>
                 </div>
+              </div>
+              <section id="products" class="row">
+                <!-- Product items will be inserted here by JavaScript -->
+              </section>
             </div>
+          </div>
         </div>
-    
+      </div>
     </div>
 
-
-
-
-
-    
     <footer>
-        <div class="container-fluid" >
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>UADE | Trabajo grupal | Materia Diseño y Desarrollo Web</p>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a href="https://gabrieljesus11.github.io/TP_DyDW/" target="_blank" style="color: #ffffff;">Sitio web del grupo</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p>Grupo 9. Gutierrez, Gabriel. Guerrero, Francisco. Testa, Natalia. Silva, Martin.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <p>Todos los derechos reservados.</p>
-                </div>
-                <div class="col-sm-6 col-md-2 col-lg-2">
-                    <div class="footer-logo-container">
-                        <a href="https://www.uade.edu.ar/"><img src="images/uade.png" alt="Logo UADE"></a>
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>UADE | Trabajo grupal | Materia Diseño y Desarrollo Web</p>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <a
+              href="https://gabrieljesus11.github.io/TP_DyDW/"
+              target="_blank"
+              style="color: #ffffff"
+              >Sitio web del grupo</a
+            >
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>
+              Grupo 9. Gutierrez, Gabriel. Guerrero, Francisco. Testa, Natalia.
+              Silva, Martin.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <p>Todos los derechos reservados.</p>
+          </div>
+          <div class="col-sm-6 col-md-2 col-lg-2">
+            <div class="footer-logo-container">
+              <a href="https://www.uade.edu.ar/"
+                ><img src="images/uade.png" alt="Logo UADE"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-
-
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
