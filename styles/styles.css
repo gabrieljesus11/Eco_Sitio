@@ -292,7 +292,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 footer p {
@@ -300,6 +300,9 @@ footer p {
 }
 
 @media (max-width: 600px) {
+  footer {
+    position: relative;
+  }
   footer p {
     font-size: small;
   }
@@ -1569,4 +1572,154 @@ footer p {
 #map {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+}
+
+
+/*pagina de contacto*/
+
+/* Contacto */
+
+.portada-contacto {
+  /*background-image: url(../img/nnnn);*/
+  position: relative;
+  bottom: 35px;
+  height: 500px;
+  z-index: 2;
+}
+
+.contacto-seccion-1 h2{
+  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.contacto-seccion-1 p{
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+  .contacto-seccion-1 h2{
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 30px;
+  }
+  
+  .contacto-seccion-1 p{
+    font-weight: 250;
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  
+}
+
+.caja-formulario{
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.115);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+form input{
+  border: none;
+  border-bottom: #3966D5 solid 3px;
+  background-color: #F8F8F8;
+  
+}
+
+form input::placeholder{
+  color: #3965d5a1;
+}
+
+form input:focus{
+  outline: none;
+}
+
+form textarea{
+  border: #3966D5 3px solid;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #F8F8F8;
+}
+
+form textarea::placeholder{
+  color: #3965d5a1;
+}
+
+form textarea:focus{
+  outline: none;
+}
+
+.boton{
+  height: 70px;
+  width: 70px;
+  background-color: #4d7fff;
+  position: fixed;
+  z-index: 99;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 40px;
+  transition: 300ms;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.132);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover{
+  transform: scale(1.07);
+}
+
+.botonenviar{
+  background-color: #1c769c;
+  color: white;
+  width: 200px;
+  height: 60px;
+  font-size: 40px;
+  font-weight: 800;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 600px) {
+  .botonenviar{
+    background-color: #1c769c;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+}
+
+.form-text {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
