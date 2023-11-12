@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,26 +43,20 @@
             <div class="col-12">
               <h1>Tienda</h1>
               <div class="col-12">
-                <!-- Cart Icon and List Container -->
                 <div class="cart-container">
                   <div class="cart-icon" onclick="toggleCartList()">
                     <img src="./assets/icons/shopping_cart.svg" alt="Cart" />
                     <span id="cart-count" class="cart-count">0</span>
                   </div>
                   <div id="cart-dropdown" class="cart-dropdown">
-                    <ul id="cart-item-list">
-                      <!-- Cart items will be dynamically inserted here -->
-                    </ul>
-                    <!-- Checkout Button -->
+                    <ul id="cart-item-list"></ul>
                     <button id="checkout-button" onclick="checkout()">
                       Comprar
                     </button>
                   </div>
                 </div>
               </div>
-              <section id="products" class="row">
-                <!-- Product items will be inserted here by JavaScript -->
-              </section>
+              <section id="products" class="row"></section>
             </div>
           </div>
         </div>
