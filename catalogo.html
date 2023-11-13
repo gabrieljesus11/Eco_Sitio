@@ -37,11 +37,19 @@
         <div class="container-fluid" style="padding:10px 10px;">
             <div class="container-fluid" style="padding:10px 10px;">
                 <div class="row">
-                    <div class="col-12">
-                        <h1>En Construcción</h1>
-                    </div>
-                    <div class="col-12">
-                        <p>Los usuarios podrán explorar una amplia variedad de productos reciclados organizados en categorías. Es un espacio donde podrán encontrar desde dispositivos electrónicos hasta muebles, fomentando un consumo responsable y sostenible.</p>
+                    <div class="col-12 carrusel-container">
+                        <div class="carrusel">
+                        <ul>
+                            <li><img src="imagen1.jpg" alt="Imagen 1"></li>
+                            <li><img src="imagen2.jpg" alt="Imagen 2"></li>
+                            <li><img src="imagen3.jpg" alt="Imagen 3"></li>
+                            <!-- Agrega más imágenes según sea necesario -->
+                        </ul>
+                        </div>
+                        <div class="navegacion">
+                        <button onclick="cambiarImagen(-1)">❮</button>
+                        <button onclick="cambiarImagen(1)">❯</button>
+                        </div>
                     </div>
                 </div>
             </div>

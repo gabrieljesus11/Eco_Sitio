@@ -1723,3 +1723,37 @@ form textarea:focus{
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Estilos de la lista de imágenes */
+.carrusel ul {
+  list-style: none;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Estilos de cada imagen */
+.carrusel li {
+  width: 100%;
+}
+
+/* Estilos para los botones de navegación */
+.navegacion {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.navegacion button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
